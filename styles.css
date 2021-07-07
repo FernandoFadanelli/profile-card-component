@@ -1,0 +1,121 @@
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #19a2ae;
+  background-color: hsl(185, 75%, 39%);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 1.2rem;
+  color:#2d3248;
+  color: hsl(229, 23%, 23%);
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6a6f81;
+  color: hsl(227, 10%, 46%);
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6a6f81;
+  color: hsl(227, 10%, 46%);
+}
+
+/* Background */
+.background-pattern {
+  position: fixed;
+  transition: ease all .5s;
+}
+
+.top {
+  top: -500px;
+  left: -250px;
+}
+
+.bottom {
+  bottom: -550px;
+  right: -250px;
+}
+
+/* Main card */
+.main-card {
+  background-color: white;
+  border-radius: 15px;
+  width: 370px;
+  height: 400px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-pattern {
+  width: 100%;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 5px solid;
+  color: white;
+  position: absolute;
+  top: 85px;
+  left: 125px;
+  right: 125px;
+  display: block;
+  margin: auto;
+}
+
+.name, .age{
+  display: inline-block;
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+
+.city {
+  font-size: 0.9rem;
+  margin-top: 0.9rem;
+}
+
+hr {
+  border: 0;
+  background-color: #6a6f81;
+  background-color: hsla(227, 10%, 46%, 0.1);
+  height: 1px;
+  margin: 7% 0;
+}
+
+.stats{
+  display: flex;
+  font-weight: 400;
+  margin-top: 1.2rem;
+  padding: 0 10%;
+  justify-content: space-around;
+}
+
+.stats-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #6a6f81;
+  color: hsl(227, 10%, 46%);
+}
+
+/* Media query */
+@media only screen and (max-width: 900px) {
+  .top {
+    top: -650px;
+    left: -650px;
+  }
+
+  .bottom {
+    bottom: -650px;
+    right: -650px;
+  }
+}
